@@ -199,7 +199,7 @@ public abstract class BaseLayer implements DrawingContent, BaseKeyframeAnimation
     matrix.preConcat(transform.getMatrix());
     intersectBoundsWithMask(rect, matrix);
 
-    rect.set(0, 0, canvas.getWidth(), canvas.getHeight());
+    rect.set(0, 0, canvas.getWidth() * 2, canvas.getHeight() * 2);
     L.endSection("Layer#computeBounds");
 
     L.beginSection("Layer#saveLayer");
